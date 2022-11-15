@@ -97,4 +97,4 @@ In flutter files head to `lib/pages/sigin_page.dart` and import the following di
 ```
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 ```
-<img src="https://www.youtube.com/watch?v=Jlxow0s7wi4">
+<img src="https://github.com/PranaMohanty13/GardenMate/blob/main/gardenmate%201.mp4">
