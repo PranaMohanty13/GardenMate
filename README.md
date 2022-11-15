@@ -3,7 +3,7 @@
 # GardenMate
 
 Check the demo here
-<img src="https://www.youtube.com/watch?v=Jlxow0s7wi4">
+https://www.youtube.com/watch?v=Jlxow0s7wi4
 
 
 
