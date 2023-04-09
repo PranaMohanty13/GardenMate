@@ -9,11 +9,15 @@ import 'package:build_my_garden/service/base_url_service.dart';
 import 'package:build_my_garden/service/secure_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 void main() async {
   /// Runs the app after checking if the user has previously signed in
   /// If not the user will go through the welcome page
+
+  // Load env file into flutter
+  await dotenv.load(fileName: "lib/.env");
 
   // Helps the await to fully run before starting the app
   WidgetsFlutterBinding.ensureInitialized();
@@ -183,22 +187,22 @@ class _BottomNavState extends State<BottomNav> {
           BottomNavigationBarItem(
             icon: Icon(Icons.library_books),
             label: 'Learn',
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.blueGrey,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.local_florist_outlined),
             label: 'Your Plants',
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.redAccent,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_bag_rounded),
             label: 'Marketplace',
-            backgroundColor: Colors.yellow,
+            backgroundColor: Colors.yellowAccent,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
             label: 'Account',
-            backgroundColor: Colors.green,
+            backgroundColor: Colors.greenAccent,
           ),
         ]);
   }

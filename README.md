@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=Jlxow0s7wi4
 
 Clone the git repo into local system
 ```
-git clone git@github.com:Abemelech/ibm-garden.git
+git clone git@github.com:GardenMate/ibm-garden.git
 ```
 
 Create virutual environment
@@ -19,12 +19,6 @@ Create virutual environment
 py -m venv venv
 
 ```
-Install all the python dependencies using
-```
-pip install -r requirements.txt
-
-```
-
 Open powershell in administerative mode and run
 ```
 set-executionpolicy RemoteSigned
@@ -32,6 +26,11 @@ set-executionpolicy RemoteSigned
 Then go back to the git directory and cd into venv and execute
 ```
 Scripts\activate
+```
+Install all the python dependencies using
+```
+pip install -r requirements.txt
+
 ```
 To start the venv for the backend django
 To stop the virtual environment
@@ -82,13 +81,6 @@ pip install django-filter
 pip install dj-rest-auth
 pip install dj-rest-auth[with_social]
 pip install python-decouple
-```
-
-Add a `.env` file under build_my_garden_backend and add the following:
-```
-EMAIL_HOST_USER = "ibm.garden@gmail.com"
-EMAIL_PASSWORD = "Welcometoibmgarden123"
-EMAIL_HOST_PASSWORD = "atjefnlzbkcdklep"
 ```
 
 For the marketplace things to install
